@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com; connect-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Orbit Lane — Everyday goods, delivered (Demo Store by Virellion Apex)</title>
+<meta name="description" content="Shop electronics, home, fashion, beauty, gaming, fitness and toys at Orbit Lane — a fictional general store demo with search, filters, cart, promo codes and a demo checkout.">
+
+<link rel="canonical" href="https://lilmoniisenterprise.github.io/retail-demo/">
+<meta name="theme-color" content="#3b2bf5">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Orbit Lane — a Virellion Apex demo">
+<meta property="og:title" content="Orbit Lane — Everyday goods, delivered (Demo Store by Virellion Apex)">
+<meta property="og:description" content="Shop electronics, home, fashion, beauty, gaming, fitness and toys at Orbit Lane — a fictional general store demo with search, filters, cart, promo codes and a demo checkout.">
+<meta property="og:url" content="https://lilmoniisenterprise.github.io/retail-demo/">
+<meta property="og:image" content="https://lilmoniisenterprise.github.io/retail-demo/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Orbit Lane demo store by Virellion Apex">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Orbit Lane — Everyday goods, delivered (Demo Store by Virellion Apex)">
+<meta name="twitter:description" content="Shop electronics, home, fashion, beauty, gaming, fitness and toys at Orbit Lane — a fictional general store demo with search, filters, cart, promo codes and a demo checkout.">
+<meta name="twitter:image" content="https://lilmoniisenterprise.github.io/retail-demo/images/og-image.png">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Orbit Lane (demo store)", "url": "https://lilmoniisenterprise.github.io/retail-demo/", "description": "Fictional general-merchandise store built as a portfolio demonstration by Virellion Apex.", "potentialAction": {"@type": "SearchAction", "target": "https://lilmoniisenterprise.github.io/retail-demo/shop.html?q={search_term_string}", "query-input": "required name=search_term_string"}, "creator": {"@type": "Organization", "name": "Virellion Apex", "url": "https://virellionapex.com"}}</script>
+</head>
+<body data-page="home">
+<a class="skip" href="#main">Skip to content</a>
+<div class="demo-bar"><div class="wrap"><span><strong>Demo store.</strong> Orbit Lane is fictional — no real orders, payments or deliveries.</span><a href="https://virellionapex.com" rel="noopener">Built by Virellion Apex →</a></div></div>
+<div class="ticker" aria-label="Current promotions"><div class="ticker-track" aria-hidden="true"><span>Free standard shipping over <b>$75</b></span><span>New customers: <b>WELCOME10</b> for 10% off</span><span>Gaming Week — <b>GAMER15</b> takes 15% off gaming</span><span><b>ORBIT20</b>: 20% off orders $100+</span><span>The Cozy Season Edit is here</span><span>Flash deals end at midnight</span><span>Free standard shipping over <b>$75</b></span><span>New customers: <b>WELCOME10</b> for 10% off</span><span>Gaming Week — <b>GAMER15</b> takes 15% off gaming</span><span><b>ORBIT20</b>: 20% off orders $100+</span><span>The Cozy Season Edit is here</span><span>Flash deals end at midnight</span></div><p class="sr-only">Promotions: free standard shipping over $75; codes WELCOME10, GAMER15, ORBIT20 and FREESHIP (demo).</p></div>
+<header class="masthead">
+  <div class="wrap mast-row">
+    <a class="brand" href="index.html" aria-label="Orbit Lane home"><svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="14" fill="#3b2bf5"/><ellipse cx="24" cy="25" rx="17" ry="7.5" fill="none" stroke="#d6f35b" stroke-width="3.2" transform="rotate(-24 24 25)"/><circle cx="24" cy="25" r="7" fill="#fff"/><circle cx="37.5" cy="17.5" r="3.4" fill="#ff5c47"/></svg><span class="brand-word">orbit<span>lane</span></span></a>
+    <form class="search" role="search" action="shop.html" autocomplete="off">
+      <label class="sr-only" for="hs-cat">Department</label>
+      <select id="hs-cat" name="cat"><option value="">All departments</option><option value="electronics">Electronics</option><option value="home">Home & Living</option><option value="fashion">Fashion & Accessories</option><option value="beauty">Beauty & Personal Care</option><option value="gaming">Gaming</option><option value="fitness">Fitness & Lifestyle</option><option value="toys">Toys & Essentials</option></select>
+      <label class="sr-only" for="hs-q">Search products</label>
+      <input id="hs-q" name="q" type="search" placeholder="Search headphones, candles, keyboards…" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="hs-suggest">
+      <button type="submit"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span class="lbl">Search</span></button>
+      <div class="suggest" id="hs-suggest" role="listbox" aria-label="Suggestions"></div>
+    </form>
+    <div class="mast-actions">
+      <a class="mast-link" href="contact.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7M12 17h.01"/></svg><span class="lbl">Help</span></a>
+      <a class="mast-link" href="contact.html#track"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg><span class="lbl">Track order</span></a>
+      <button class="cart-btn" type="button" data-open-cart aria-haspopup="dialog" aria-controls="cart-drawer"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ctext" data-cart-sub>$0.00</span><span class="count" data-cart-count>0</span></button>
+    </div>
+  </div>
+  <nav class="dept-bar" aria-label="Departments">
+    <div class="wrap dept-row">
+      <button class="dept-all" type="button" aria-expanded="false" aria-controls="mega"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg><span class="lbl">All departments</span><span class="sr-only">All departments</span></button>
+      <div class="chips">
+        <a class="chip hot" href="shop.html?sale=1">🔥 Deals</a><a class="chip" href="shop.html?cat=electronics">Electronics</a><a class="chip" href="shop.html?cat=home">Home & Living</a><a class="chip" href="shop.html?cat=fashion">Fashion & Accessories</a><a class="chip" href="shop.html?cat=beauty">Beauty & Personal Care</a><a class="chip" href="shop.html?cat=gaming">Gaming</a><a class="chip" href="shop.html?cat=fitness">Fitness & Lifestyle</a><a class="chip" href="shop.html?cat=toys">Toys & Essentials</a>
+        <a class="chip" href="categories.html">Collections</a>
+        <a class="chip" href="about.html">About</a>
+        <a class="chip" href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="mega" id="mega"><div class="wrap"><div class="mega-grid"></div></div></div>
+  </nav>
+</header>
+<main id="main">
+<div class="wrap">
+  <section class="bento" aria-label="Featured promotions">
+    <div class="tile tile-hero">
+      <div>
+        <span class="eyebrow">Seven departments · one cart</span>
+        <h1>Everything for every day, <em>in orbit.</em></h1>
+        <p>Tech, home, style, beauty, play and training gear — picked for quality, priced to be fair, and shipped free over $75.</p>
+        <div class="hero-actions">
+          <a class="btn btn-lime" href="shop.html">Shop all products</a>
+          <a class="btn btn-ghost" href="shop.html?sale=1" style="color:#fff">See today’s deals</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <span class="hero-badge" aria-hidden="true"><span>up to<b>27%</b>off deals</span></span>
+        <img id="hero-img" src="images/hero.jpg" alt="Small shopping cart model on a bright blue background" width="1100" height="620" fetchpriority="high">
+      </div>
+    </div>
+    <div class="tile tile-deal" id="deal" aria-label="Deal of the day"></div>
+    <a class="tile tile-ship" href="shop.html?collection=under-50">
+      <span class="eyebrow" style="color:var(--ink)">Free shipping</span>
+      <h2>Free standard shipping over $75</h2>
+      <span class="tile-cta">Shop gifts under $50 →</span>
+      <svg class="deco" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+    </a>
+    <a class="tile tile-game" href="shop.html?collection=gaming-week">
+      <span class="eyebrow">Gaming week</span>
+      <h2>15% off gaming with code GAMER15</h2>
+      <span class="tile-cta">Level up →</span>
+      <svg class="deco" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="11" rx="5"/><path d="M7 11v3M5.5 12.5h3M16 12h.01M18 14h.01"/></svg>
+    </a>
+  </section>
+</div>
+
+<section class="section-tight" aria-labelledby="dept-h">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Featured categories</span><h2 id="dept-h">Shop by department</h2></div><a class="link" href="categories.html">All departments →</a></div>
+    <div class="depts" id="depts"></div>
+  </div>
+</section>
+
+<section class="section-tight reveal" aria-labelledby="feat-h">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Featured products</span><h2 id="feat-h">Picked for you this week</h2></div>
+      <div class="sec-tools"><a class="link" href="shop.html">View all</a><button class="rail-btn" type="button" data-rail-prev="rail-featured" aria-label="Scroll featured products left"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 5l-7 7 7 7"/></svg></button><button class="rail-btn" type="button" data-rail-next="rail-featured" aria-label="Scroll featured products right"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 5l7 7-7 7"/></svg></button></div></div>
+    <div class="rail" id="rail-featured"></div>
+  </div>
+</section>
+
+<section class="section-tight reveal" aria-labelledby="promo-h">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Promotional offers</span><h2 id="promo-h">Tap a code to copy it</h2></div><span class="muted" style="font-size:.88rem">Demo codes — apply them in your cart</span></div>
+    <div class="coupons">
+      <div class="coupon"><div><b>10% off</b><small>Your first order, no minimum</small></div><button class="code" type="button" data-code="WELCOME10" aria-label="Copy code WELCOME10">WELCOME10</button></div>
+      <div class="coupon"><div><b>20% off</b><small>Orders of $100 or more</small></div><button class="code" type="button" data-code="ORBIT20" aria-label="Copy code ORBIT20">ORBIT20</button></div>
+      <div class="coupon"><div><b>15% off</b><small>Every gaming item</small></div><button class="code" type="button" data-code="GAMER15" aria-label="Copy code GAMER15">GAMER15</button></div>
+      <div class="coupon"><div><b>Free ship</b><small>Standard shipping, any total</small></div><button class="code" type="button" data-code="FREESHIP" aria-label="Copy code FREESHIP">FREESHIP</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight reveal" aria-labelledby="new-h">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">New arrivals</span><h2 id="new-h">Just landed</h2></div><a class="link" href="shop.html?collection=new">Shop new arrivals →</a></div>
+    <div class="grid" id="grid-new"></div>
+  </div>
+</section>
+
+<section class="section-tight reveal" aria-labelledby="flash-h">
+  <div class="wrap">
+    <div class="band-dark">
+      <div class="sec-head"><div><span class="eyebrow">Featured deals</span><h2 id="flash-h">Flash deals</h2><div style="display:flex;gap:.6rem;align-items:center;margin-top:.5rem"><span style="color:#c9c6e6;font-size:.9rem">Ends at midnight</span><div class="countdown" data-countdown></div></div></div>
+        <div class="sec-tools"><a class="link" href="shop.html?sale=1" style="color:var(--lime)">All deals</a><button class="rail-btn" type="button" data-rail-prev="rail-flash" aria-label="Scroll deals left"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 5l-7 7 7 7"/></svg></button><button class="rail-btn" type="button" data-rail-next="rail-flash" aria-label="Scroll deals right"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 5l7 7-7 7"/></svg></button></div></div>
+      <div class="rail" id="rail-flash"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight reveal" aria-labelledby="best-h">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Best sellers</span><h2 id="best-h">The top six right now</h2></div><a class="link" href="shop.html?sort=popular">Sort by popularity →</a></div>
+    <div class="ranked">
+      <a class="rank-feature" id="rank-feature" href="shop.html"></a>
+      <ol class="rank-list" id="rank-list"></ol>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight reveal" aria-labelledby="season-h">
+  <div class="wrap">
+    <div class="season">
+      <div class="season-copy">
+        <span class="eyebrow">Seasonal promotion</span>
+        <h2 id="season-h">The Cozy Season Edit</h2>
+        <p>Chunky knits, amber candlelight and soft companions for shorter days. Up to 20% off selected pieces through the end of the month.</p>
+        <div class="hero-actions"><a class="btn btn-lime" href="shop.html?collection=cozy">Shop the edit</a><a class="btn btn-ghost" href="categories.html" style="color:#fff3e6">All collections</a></div>
+      </div>
+      <div class="season-grid" id="season-grid"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight reveal" aria-label="Why shop with us">
+  <div class="wrap trust">
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg><p style="margin:0"><strong>Free shipping over $75</strong><span>Express and next-day options too</span></p></div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12a8 8 0 1 0 3-6.2M4 4v4h4"/></svg><p style="margin:0"><strong>30-day returns</strong><span>Simple, prepaid labels (demo policy)</span></p></div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><p style="margin:0"><strong>Secure-ready checkout</strong><span>Built for hosted payment providers</span></p></div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7M12 17h.01"/></svg><p style="margin:0"><strong>Real humans to help</strong><span>Support form and FAQ on our contact page</span></p></div>
+  </div>
+</section>
+
+<section class="section-tight reveal" aria-labelledby="news-h">
+  <div class="wrap">
+    <div class="news">
+      <div><span class="eyebrow" style="color:var(--ink)">Newsletter</span><h2 id="news-h">Get first dibs on drops and deals.</h2><p style="margin:0">One email a week. New arrivals, members-only codes, zero spam.</p></div>
+      <form data-newsletter novalidate>
+        <label class="sr-only" for="nl-email">Email address</label>
+        <div class="news-row"><input id="nl-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required><button class="btn btn-dark" type="submit">Subscribe</button></div>
+        <p class="notice" role="status" hidden></p>
+        <small>Demonstration form: nothing is sent or stored.</small>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight reveal" aria-labelledby="va-h">
+  <div class="wrap agency">
+    <div><span class="eyebrow">Built by Virellion Apex</span><h2 id="va-h">Want an online store that works like this?</h2><p class="muted" style="margin:0">Search, filtering, product variants, promo codes, cart and checkout flows — ready to connect to Shopify, Stripe or your inventory system.</p></div>
+    <div class="actions"><a class="btn btn-primary" href="https://virellionapex.com" rel="noopener">Request a Similar Website</a><a class="btn btn-ghost" href="https://virellionapex.com" rel="noopener">Schedule a Consultation</a></div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="Orbit Lane home"><svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="14" fill="#3b2bf5"/><ellipse cx="24" cy="25" rx="17" ry="7.5" fill="none" stroke="#d6f35b" stroke-width="3.2" transform="rotate(-24 24 25)"/><circle cx="24" cy="25" r="7" fill="#fff"/><circle cx="37.5" cy="17.5" r="3.4" fill="#ff5c47"/></svg><span class="brand-word">orbit<span>lane</span></span></a>
+        <p style="margin-top:1rem;max-width:36ch">Everyday goods across seven departments, gathered in one easy cart. A fictional store built to show what a modern online shop can do.</p>
+        <p style="margin:0">Support (placeholder): <span>help@orbitlane.example</span></p>
+      </div>
+      <div><h2>Shop</h2><ul>
+        <li><a href="shop.html">All products</a></li><li><a href="shop.html?collection=new">New arrivals</a></li>
+        <li><a href="shop.html?collection=best">Best sellers</a></li><li><a href="shop.html?sale=1">Deals</a></li><li><a href="categories.html">Departments &amp; collections</a></li></ul></div>
+      <div><h2>Help</h2><ul>
+        <li><a href="contact.html">Contact us</a></li><li><a href="contact.html#faq">Shipping &amp; returns FAQ</a></li>
+        <li><a href="contact.html#track">Track an order</a></li><li><a href="cart.html">Your cart</a></li><li><a href="about.html">About Orbit Lane</a></li></ul></div>
+      <div><h2>Want a store like this?</h2><ul>
+        <li><a href="https://virellionapex.com" rel="noopener">Request a Website</a></li>
+        <li><a href="https://virellionapex.com" rel="noopener">Request a Project Quote</a></li>
+        <li><a href="https://virellionapex.com" rel="noopener">Schedule a Consultation</a></li>
+        <li><a href="https://virellionapex.com" rel="noopener">Contact Virellion Apex</a></li></ul></div>
+    </div>
+    <p class="disclaimer">This online store is a demonstration project developed by Virellion Apex. Brand identity, products, descriptions, inventory, pricing, and promotions are fictional.</p>
+    <details style="margin-top:1rem"><summary style="cursor:pointer;font-weight:700;color:#fff">Photo credits</summary><p style="margin:.5rem 0 0">Product and hero photography from Unsplash, used under the Unsplash License. Photos show generic items and don’t represent the fictional products’ real makers.</p><ul class="credits-list" id="photo-credits"></ul></details>
+    <div class="foot-bottom"><span>© 2026 Orbit Lane (fictional) · Demo by <a href="https://virellionapex.com" rel="noopener">Virellion Apex</a></span><span>No real orders · No payments collected · No data sent</span></div>
+  </div>
+</footer>
+<nav class="tabbar" aria-label="Quick navigation">
+  <a href="index.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a>
+  <a href="shop.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16l-1.5 6h-13zM6 13l-1 4h14"/><circle cx="8" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></svg><span>Shop</span></a>
+  <a href="categories.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>Departments</span></a>
+  <a href="cart.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span>Cart</span><span class="tcount" data-cart-count hidden>0</span></a>
+</nav>
+<div class="drawer-back"></div>
+<aside class="drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" aria-hidden="true" inert>
+  <div class="drawer-head"><h2 id="drawer-title">Your cart</h2><button class="icon-btn drawer-close" type="button" aria-label="Close cart"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="drawer-body"></div>
+  <div class="drawer-foot" hidden>
+    <div style="display:flex;justify-content:space-between;font-weight:800;font-size:1.1rem"><span>Subtotal</span><span data-drawer-sub>$0.00</span></div>
+    <p class="muted" style="margin:0;font-size:.85rem">Shipping, promo codes and tax are calculated in the cart.</p>
+    <a class="btn btn-primary btn-block" href="checkout.html">Checkout (demo)</a>
+    <a class="btn btn-ghost btn-block" href="cart.html">View full cart</a>
+  </div>
+</aside>
+<script src="js/script.js" defer></script>
+</body>
+</html>
