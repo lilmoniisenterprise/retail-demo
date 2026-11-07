@@ -1144,7 +1144,7 @@
         "<tr><td>Shipping · " + esc(m.label) + "</td><td>" + (t.ship ? money(t.ship) : "Free") + "</td></tr><tr><td>Estimated tax</td><td>" + money(t.tax) + "</td></tr>" +
         '<tr><td><strong>Total</strong></td><td><strong>' + money(t.total) + "</strong></td></tr></tbody></table>" +
         '<p class="muted" style="text-align:left">' + (method() === "pickup" ? "Pickup" : "Ship to") + ": " + (method() === "pickup" ? "Orbit Lane demo store (fictional)" : esc(E.address1.value + ", " + E.city.value + ", " + E.state.value + " " + E.zip.value)) + "<br>Payment method selected: " + esc(pay) + " (simulated)<br>Confirmation email: not sent (demo)</p>" +
-        '<div class="hero-actions" style="justify-content:center"><a class="btn btn-primary" href="shop.html">Keep shopping</a><a class="btn btn-ghost" href="https://virellionapex.com" rel="noopener">Request a store like this</a></div>';
+        '<div class="hero-actions" style="justify-content:center"><a class="btn btn-primary" href="shop.html">Keep shopping</a><a class="btn btn-ghost" href="https://calendly.com/virellionapex/free-consultation" rel="noopener">Request a store like this</a></div>';
       store("lastOrder", { no: no, total: t.total, at: new Date().toISOString() });
       Cart.clear(); storeDel("checkout");
       layout.hidden = true; $(".steps").hidden = true; conf.hidden = false;
